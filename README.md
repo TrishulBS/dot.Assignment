@@ -13,7 +13,7 @@
 - **CRUD Routes**:
   - Four routes are implemented for performing CRUD operations on any defined database table:
     - `POST /:collection/`: Creates a new record in the specified table.
-      Sample API usage: POST - localhost:5000/users/      Here users is the table name created. Use any table name you create
+      Sample API usage: POST - localhost:5000/users/      Here users is the collection name(table name) created. Use any table name you create
     - `DELETE /:collection/:id`: Deletes a record with id from the specified table.
       Sample API usage: DELETE - localhost:5000/users/1
     - `PUT /:collection/:id`: Updates an existing record with id in the specified table.
