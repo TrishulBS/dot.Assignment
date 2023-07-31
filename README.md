@@ -4,7 +4,12 @@
 - **Project Description**:
   - This project allows defining the schema for multiple database tables in a JSON file named `schema.json`.
   - The schema format follows the example format present in the `schema.json` file.
-
+ 
+- **Concurrent Environment**:
+   - Since this project is using local database using SQLite, on concurret environment, global database should be used so all machine use one database.
+   - Code should be version-controlled using git. Deplyment to mutiple machine will be easier
+   - Concurrent update, or delete of rows in the databse should be eliminated
+   - Incoming http request to machines should be evenly distributed
 - **CRUD Routes**:
   - Four routes are implemented for performing CRUD operations on any defined database table:
     - `POST /:collection/`: Creates a new record in the specified table.
