@@ -1,5 +1,5 @@
 import supertest from "supertest";
-import {app} from "../index"
+import {app} from "../app"
 import fs from 'fs';
 
 const schemaPath = './schema.json';
@@ -33,6 +33,7 @@ beforeAll(async () => {
     async (tableName: string) => {
       const reqBody = {id: 1}
       const response = await supertest(app).post(`/${tableName}/`).send(reqBody);
+      console.log(response)
       expect(response.status).toBe(201);
     }
   );
