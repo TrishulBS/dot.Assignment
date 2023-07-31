@@ -1,0 +1,29 @@
+{
+    "tables": [
+      {
+        "name": "users",
+        "columns": [
+          {
+            "name": "id",
+            "type": "INTEGER",
+            "primaryKey": true
+          },
+          {
+            "name": "username",
+            "type": "TEXT",
+            "unique": true
+          },
+          {
+            "name": "email",
+            "type": "TEXT",
+            "unique": true
+          },
+          {
+            "name": "password",
+            "type": "TEXT"
+          }
+        ]
+      }
+    ]
+  }
+  
